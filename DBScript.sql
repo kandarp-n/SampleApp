@@ -1,4 +1,4 @@
-﻿Drop table dbo.Employee
+Drop table dbo.Employee
 Drop table dbo.Department
 
 CREATE TABLE [dbo].[Department]
