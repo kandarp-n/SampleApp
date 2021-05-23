@@ -3,13 +3,13 @@ Drop table dbo.Department
 
 CREATE TABLE [dbo].[Department]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[DeptId] INT NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(100) NULL
 )
 
 CREATE TABLE [dbo].[Employee]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[EmpId] INT NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(100) NULL,
-	[Dept] int foreign key references Department(Id)
+	[DeptId] int foreign key references Department(DeptId)
 )
